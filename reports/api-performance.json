@@ -1,0 +1,86 @@
+{
+  "generatedAt": "2026-11-02T07:12:53.971Z",
+  "baseUrl": "https://demowebshop.tricentis.com",
+  "note": "Acceptance-test response times; this is not a load or throughput test.",
+  "requestCount": 12,
+  "summary": {
+    "averageMs": 1244.07,
+    "medianMs": 1136.2,
+    "p95Ms": 2192.03,
+    "maxMs": 2192.03
+  },
+  "requests": [
+    {
+      "method": "GET",
+      "path": "/register",
+      "status": 200,
+      "durationMs": 1531.78
+    },
+    {
+      "method": "POST",
+      "path": "/register",
+      "status": 200,
+      "durationMs": 2192.03
+    },
+    {
+      "method": "GET",
+      "path": "/register",
+      "status": 200,
+      "durationMs": 1233.28
+    },
+    {
+      "method": "POST",
+      "path": "/register",
+      "status": 200,
+      "durationMs": 801.06
+    },
+    {
+      "method": "GET",
+      "path": "/register",
+      "status": 200,
+      "durationMs": 1136.2
+    },
+    {
+      "method": "POST",
+      "path": "/register",
+      "status": 200,
+      "durationMs": 796.98
+    },
+    {
+      "method": "GET",
+      "path": "/register",
+      "status": 200,
+      "durationMs": 1193.26
+    },
+    {
+      "method": "POST",
+      "path": "/register",
+      "status": 200,
+      "durationMs": 859.16
+    },
+    {
+      "method": "GET",
+      "path": "/register",
+      "status": 200,
+      "durationMs": 1092.82
+    },
+    {
+      "method": "POST",
+      "path": "/register",
+      "status": 200,
+      "durationMs": 1968.71
+    },
+    {
+      "method": "GET",
+      "path": "/register",
+      "status": 200,
+      "durationMs": 1359.41
+    },
+    {
+      "method": "POST",
+      "path": "/register",
+      "status": 200,
+      "durationMs": 764.15
+    }
+  ]
+}

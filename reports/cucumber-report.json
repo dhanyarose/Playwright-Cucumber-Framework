@@ -1,0 +1,815 @@
+[
+  {
+    "description": "  As a client of the registration form endpoint\n  I want valid requests to register and invalid requests to be rejected\n  So that registration rules are enforced server-side",
+    "elements": [
+      {
+        "description": "",
+        "id": "demo-web-shop-registration-form-api;register-through-the-form-endpoint-with-valid-data",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Register through the form endpoint with valid data",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 62018600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "I have opened the registration API form",
+            "match": {
+              "location": "features\\step-definitions\\registration-api.steps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1535597199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "I submit valid registration data through the API",
+            "match": {
+              "location": "features\\step-definitions\\registration-api.steps.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2192431300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "the API registration succeeds",
+            "match": {
+              "location": "features\\step-definitions\\registration-api.steps.ts:70"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5274100
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 8335100
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@api",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "demo-web-shop-registration-form-api;reject-empty-registration-data-through-the-api",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Reject empty registration data through the API",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 5291199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 13,
+            "name": "I have opened the registration API form",
+            "match": {
+              "location": "features\\step-definitions\\registration-api.steps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1234613900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "I submit empty registration data through the API",
+            "match": {
+              "location": "features\\step-definitions\\registration-api.steps.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 801424200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "the API reports all required registration fields",
+            "match": {
+              "location": "features\\step-definitions\\registration-api.steps.ts:75"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11347400
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 4089599
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@api",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "demo-web-shop-registration-form-api;reject-a-malformed-email-through-the-api",
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "Reject a malformed email through the API",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 4295200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 18,
+            "name": "I have opened the registration API form",
+            "match": {
+              "location": "features\\step-definitions\\registration-api.steps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1136892799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "I submit registration data with an invalid email through the API",
+            "match": {
+              "location": "features\\step-definitions\\registration-api.steps.ts:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 797227500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "the API reports an invalid email",
+            "match": {
+              "location": "features\\step-definitions\\registration-api.steps.ts:85"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1822900
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1856400
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@api",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "demo-web-shop-registration-form-api;reject-mismatched-passwords-through-the-api",
+        "keyword": "Scenario",
+        "line": 22,
+        "name": "Reject mismatched passwords through the API",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1699800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 23,
+            "name": "I have opened the registration API form",
+            "match": {
+              "location": "features\\step-definitions\\registration-api.steps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1195294599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 24,
+            "name": "I submit registration data with mismatched passwords through the API",
+            "match": {
+              "location": "features\\step-definitions\\registration-api.steps.ts:40"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 859778899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 25,
+            "name": "the API reports a password mismatch",
+            "match": {
+              "location": "features\\step-definitions\\registration-api.steps.ts:90"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6481200
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 11333800
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@api",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "demo-web-shop-registration-form-api;reject-a-duplicate-email-through-the-api",
+        "keyword": "Scenario",
+        "line": 27,
+        "name": "Reject a duplicate email through the API",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 3623100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 28,
+            "name": "I have opened the registration API form",
+            "match": {
+              "location": "features\\step-definitions\\registration-api.steps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1094415100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 29,
+            "name": "I submit the same valid registration data twice through the API",
+            "match": {
+              "location": "features\\step-definitions\\registration-api.steps.ts:51"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4099141800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 30,
+            "name": "the API reports that the email is already registered",
+            "match": {
+              "location": "features\\step-definitions\\registration-api.steps.ts:97"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3554800
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 4294200
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@api",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "demo-web-shop-registration-form-api",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Demo Web Shop registration form API",
+    "tags": [
+      {
+        "name": "@api",
+        "line": 1
+      }
+    ],
+    "uri": "features\\registration-api.feature"
+  },
+  {
+    "description": "  As a visitor\n  I want to register an account\n  So that I can use the Demo Web Shop",
+    "elements": [
+      {
+        "description": "",
+        "id": "demo-web-shop-registration;open-registration-from-the-login-page",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Open registration from the login page",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 464520100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "I am on the login page",
+            "match": {
+              "location": "features\\step-definitions\\registration.steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5462399799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "I click the Register link",
+            "match": {
+              "location": "features\\step-definitions\\registration.steps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 519838399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "the registration page is displayed",
+            "match": {
+              "location": "features\\step-definitions\\registration.steps.ts:46"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 52580000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 80654000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ui",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "demo-web-shop-registration;register-with-valid-details",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Register with valid details",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1899047899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 13,
+            "name": "I am on the registration page",
+            "match": {
+              "location": "features\\step-definitions\\registration.steps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3816330200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "I submit valid registration details",
+            "match": {
+              "location": "features\\step-definitions\\registration.steps.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1585437700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "registration completes successfully",
+            "match": {
+              "location": "features\\step-definitions\\registration.steps.ts:51"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 55228199
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 81827499
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ui",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "demo-web-shop-registration;reject-an-empty-registration-form",
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "Reject an empty registration form",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 273486600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 18,
+            "name": "I am on the registration page",
+            "match": {
+              "location": "features\\step-definitions\\registration.steps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2697296800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "I submit an empty registration form",
+            "match": {
+              "location": "features\\step-definitions\\registration.steps.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 85534699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "required-field validation errors are displayed",
+            "match": {
+              "location": "features\\step-definitions\\registration.steps.ts:55"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 25452299
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 73722199
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ui",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "demo-web-shop-registration;reject-a-malformed-email",
+        "keyword": "Scenario",
+        "line": 22,
+        "name": "Reject a malformed email",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 262283000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 23,
+            "name": "I am on the registration page",
+            "match": {
+              "location": "features\\step-definitions\\registration.steps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2690321499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 24,
+            "name": "I submit registration with an invalid email",
+            "match": {
+              "location": "features\\step-definitions\\registration.steps.ts:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 247272199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 25,
+            "name": "the invalid-email validation error is displayed",
+            "match": {
+              "location": "features\\step-definitions\\registration.steps.ts:68"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8158400
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 78141400
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ui",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "demo-web-shop-registration;reject-mismatched-passwords",
+        "keyword": "Scenario",
+        "line": 27,
+        "name": "Reject mismatched passwords",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 259895700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 28,
+            "name": "I am on the registration page",
+            "match": {
+              "location": "features\\step-definitions\\registration.steps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3311559500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 29,
+            "name": "I submit registration with mismatched passwords",
+            "match": {
+              "location": "features\\step-definitions\\registration.steps.ts:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 184134799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 30,
+            "name": "the password-mismatch validation error is displayed",
+            "match": {
+              "location": "features\\step-definitions\\registration.steps.ts:72"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4531900
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 72425699
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ui",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "demo-web-shop-registration;reject-a-password-shorter-than-the-minimum",
+        "keyword": "Scenario",
+        "line": 32,
+        "name": "Reject a password shorter than the minimum",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 293689299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 33,
+            "name": "I am on the registration page",
+            "match": {
+              "location": "features\\step-definitions\\registration.steps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2832892299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 34,
+            "name": "I submit registration with a password shorter than the minimum",
+            "match": {
+              "location": "features\\step-definitions\\registration.steps.ts:38"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 157458299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 35,
+            "name": "the password-length validation error is displayed",
+            "match": {
+              "location": "features\\step-definitions\\registration.steps.ts:82"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5697500
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 74045100
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ui",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "demo-web-shop-registration",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Demo Web Shop registration",
+    "tags": [
+      {
+        "name": "@ui",
+        "line": 1
+      }
+    ],
+    "uri": "features\\registration.feature"
+  }
+]

@@ -1,0 +1,3 @@
+[    2197ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "new-password"): (More info: https://goo.gl/9p2vKq) %o @ https://demowebshop.tricentis.com/register:0
+[    2197ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "new-password"): (More info: https://goo.gl/9p2vKq) %o @ https://demowebshop.tricentis.com/register:0
+[   24622ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://ssl.google-analytics.com/ga.js:0

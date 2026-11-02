@@ -1,0 +1,20 @@
+{
+  "name": "demo-web-shop-bdd-tests",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "cucumber-js",
+    "test:ui": "cucumber-js --tags @ui",
+    "test:ui:headed": "cross-env HEADED=true cucumber-js --tags @ui",
+    "test:api": "cucumber-js --tags @api"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^11.3.0",
+    "@playwright/test": "^1.55.0",
+    "@types/node": "^22.15.0",
+    "cross-env": "^7.0.3",
+    "playwright": "^1.55.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}

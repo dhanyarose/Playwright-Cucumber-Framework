@@ -1,0 +1,6 @@
+[   24983ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://ssl.google-analytics.com/ga.js:0
+[   26236ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ https://demowebshop.tricentis.com/login:0
+[   48679ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://ssl.google-analytics.com/ga.js:0
+[   52029ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "new-password"): (More info: https://goo.gl/9p2vKq) %o @ https://demowebshop.tricentis.com/register:0
+[   52031ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "new-password"): (More info: https://goo.gl/9p2vKq) %o @ https://demowebshop.tricentis.com/register:0
+[   74503ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://ssl.google-analytics.com/ga.js:0
