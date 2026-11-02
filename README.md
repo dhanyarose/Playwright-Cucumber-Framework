@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Demo Web Shop BDD tests
 
 TypeScript page objects and Cucumber BDD scenarios for the Demo Web Shop
@@ -52,3 +53,6 @@ Cucumber writes `reports/cucumber-report.json`. API scenarios also write
 average, median, p95, and maximum. These are measurements from a small
 acceptance-test run, not a load/throughput benchmark or a service-level
 performance guarantee.
+=======
+# Playwright-Cucumber-Framework
+>>>>>>> fd1e148b7bd7968683168ffba49d5799a3b852ce
